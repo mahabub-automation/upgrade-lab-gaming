@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Channel publishing tool for the Upgrade Lab Gaming channel publishing tool.">
+  <meta name="theme-color" content="#0b1420">
+  <title>Channel publishing tool | Upgrade Lab Gaming</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">UL</span>Upgrade Lab Gaming</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="container">
+    <section class="hero">
+      <p class="eyebrow">CHANNEL OWNER TOOL</p>
+      <h1>A publishing workflow<br>for Upgrade Lab Gaming.</h1>
+      <p class="lead">An owner-operated tool that renders original vehicle game simulations, uploads approved videos to the channel, and schedules their publication through the YouTube Data API.</p>
+      <a class="button" href="https://www.youtube.com/channel/UC7Bjkh-WH_8xpZcFL7YALLQ">Visit the YouTube channel</a>
+    </section>
+    <section class="cards" aria-label="Publishing workflow">
+      <article class="card">
+        <span class="card-number">01 / CREATE</span>
+        <h2>Render a challenge</h2>
+        <p>Code creates animated vehicle tests with on-screen measurements, sound, and a result. Each approved episode has its own title, description, and hashtags.</p>
+      </article>
+      <article class="card">
+        <span class="card-number">02 / AUTHORIZE</span>
+        <h2>Confirm the channel</h2>
+        <p>The owner authorizes the tool through Google OAuth. The uploader checks the connected channel identity before sending the approved batch.</p>
+      </article>
+      <article class="card">
+        <span class="card-number">03 / SCHEDULE</span>
+        <h2>Publish on a schedule</h2>
+        <p>Videos are uploaded with an owner-selected publication time. Local records track successful uploads, and the owner's Telegram bot can report their progress.</p>
+      </article>
+    </section>
+    <section class="info-block">
+      <h2>How Google access is used</h2>
+      <p>The tool uses <code>youtube.upload</code> to upload videos and set their publishing details. It uses <code>youtube.readonly</code> to identify the authorized channel. Authorization credentials and publishing records are stored in the operator's VPS account.</p>
+      <p>This website documents the channel owner's publishing tool. Google authorization takes place through the uploader's local authorization flow.</p>
+    </section>
+    <section class="info-block">
+      <h2>Privacy, terms, and support</h2>
+      <p>Read how the tool handles channel data, how the owner can control access, and the responsibilities associated with using the publishing workflow.</p>
+      <div class="text-links">
+        <a href="privacy.html">Privacy policy</a>
+        <a href="terms.html">Terms of service</a>
+        <a href="https://github.com/mahabub-automation/upgrade-lab-gaming/issues">Support and privacy requests</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Upgrade Lab Gaming · Channel publishing tool</p>
+      <nav aria-label="Footer navigation">
+        <a href="privacy.html">Privacy policy</a>
+        <a href="terms.html">Terms of service</a>
+        <a href="https://github.com/mahabub-automation/upgrade-lab-gaming/issues">Support</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
